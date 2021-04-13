@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+/*
+.mb_0{
+    margin-bottom: 0 !important;
+}
+*/
+.container{
+    width: 1140px;
+    margin: auto;
+}
+.section_heading{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.section_heading h3{
+    font-size: 40px;
+    color: #2d3950;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.section_heading p{
+    font-size: 15px;
+    color: #808080;
+    font-weight: 400;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+/*header area starts*/
+.header{
+    padding: 31px 0;
+    background: #fff;
+}
+.menu_area{
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    margin-top: 3px;
+}
+.nav a{
+    font-size: 24px;
+    color: #222222;
+    padding-left: 47px;
+}
+/*header area ends*/
+
+/*banner area starts*/
+.banner{
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 216px 0 91px 0;
+    text-align: center;
+}
+.bnr_content h1{
+    font-size: 120px;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+}
+.bnr_content h1:before{
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 2px;
+    background: #00FFFF;
+}
+.bnr_content p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 43px;
+}
+.banner_btn{
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 22px 36px;
+    border: 1px solid #00FFFF;
+    margin-top: 67px;
+    margin-bottom: 178px;
+}
+.bnr_icon{
+    display: block;
+    color: #fff;
+    font-size: 22px;
+}
+/*banner area ends*/
+
+/*about area starts*/
+.about{
+    padding: 80px 0 110px 0;
+    background: #f6f9f9;
+    text-align: center;
+}
+.about_content p{
+    color: #808080;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 32px;
+    margin-top: 4px;
+}
+/*about area ends*/
+
+/*service area starts*/
+.service{
+    padding: 65px 0;
+    background: #fff;
+}
+.ser_main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ser_area{
+    flex-basis: 30.7%;
+    padding: 0 15px;
+    text-align: center;
+}
+.ser_icon{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#48baff 50%,#5fc3ff 50%);
+    margin: auto;
+    margin-bottom: 32px;
+}
+.ser_icon i{
+    color: #fff;
+    font-size: 50px;
+}
+/*.ser_content{}*/
+.ser_content h4{
+    font-size: 22px;
+    color: #2d3950;
+}
+.ser_content p{
+    font-size: 15px;
+    color: #808080;
+    padding: 0 50px;
+}
+/*service area ends*/
+
+/*Showcase area starts*/
+.showcase{
+    padding: 80px 0 116px 0;
+    background:	#D3D3D3;
+}
+.section_heading p {
+    font-size: 20px;
+    color: #2F4F4F	;
+}
+.showcase_main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.showcase_image_area{
+    position: relative;
+    overflow: hidden;
+    flex-basis: 30.7%;
+    margin: 0 15px;
+    margin-bottom: 30px;
+}
+.showcase_image_area img{
+    width: 100%;
+}
+.showcase_image_overlay{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(21, 164, 250, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.showcase_image_overlay a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+    border: 1px solid #fff;
+    margin: 0 5px;
+    color:#fff;
+    border-radius: 2px;
+}
+.showcase_image_area:hover .showcase_image_overlay{
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+}
+.showcase_image_area:nth-child(6),
+.showcase_image_area:nth-child(5),
+.showcase_image_area:nth-child(4){
+    margin-bottom: 0;
+}
+/*Showcase area ends*/
+
+/*contact area start*/
+.footer {
+    background-image: url("../images/footer.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.footer-overlay {
+    background: rgba(52, 61, 79, 0.8);
+    padding: 74px 0 110px 0;
+}
+.footer .sec_heading h3 {
+    color:white;
+    font-size:45px;
+    margin-left: 39%;
+}
+.footer .sec_heading p {
+    font-size: 16px;
+    margin-left: 41%;
+    padding-top: 18px;
+    color: #D3D3D3;
+}
+/*form area start*/
+.form_area {
+    margin: auto;
+    width: 50%;
+    padding-top: 90px;
+}
+.form_area textarea,
+.form_area input{
+    display: block;
+    width:555px;
+    height:42px;
+    background:transparent;
+    border:1px solid #999999;
+    border-radius:2px;
+    margin-bottom:20px;
+    padding-left:20px;
+    color:white;
+}
+.form_area textarea{
+    height:162px;
+    width:556px;
+    padding-top:20px;
+}
+.form_footer{
+    display:flex;
+    justify-content:space-between;
+}
+.checkbox{
+    position:relative;
+    top:15px;
+}
+.checkbox input{
+    display:inline-block;
+    width:17px;
+    height:17px;
+    color: 	#708090;
+}
+.checkbox label{
+    position:relative;
+    color:white;
+    top:-2px;
+    left:15px;
+}
+.form_footer button{
+    width:142px;
+    height:56px;
+    background:transparent;
+    border:2px solid #00FFFF;
+    font-size:18px;
+    color:white;
+    border-radius: 3px;
+    margin-right:-20px;
+}
+/*form area end*/
+/*contact area end*/
+
+/*copyright area start*/
+.copyright{
+    padding:25px 0;
+}
+.copy_text p{
+    font-size:17px;
+    color:#999999;
+}
+.copy_main{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.social_icon ul{
+    display:flex;
+}
+.social_icon a{
+    height:40px;
+    width:40px;
+    border-radius:3px;
+    background:#15a4fa;
+    color:white;
+    display: inline-block;
+    text-align:center;
+    line-height:40px;
+    margin-left:5px;
+}
+/*copyright area end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
